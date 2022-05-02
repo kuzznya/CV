@@ -10,21 +10,21 @@ Telegram [kuzznya](https://t.me/kuzznya)
 
 ## Experience
 
-Dell Technologies
+- Dell Technologies
 
 #### Senior Java Developer (Mar 2022 - ongoing)
 #### Java Developer (May 2021 - Mar 2022)
 
 
-ITMO University
+- ITMO University
 
 #### Java & microservices mentor (Sep 2021 - ongoing)
 
-Intellectual Technologies
+- Intellectual Technologies
 
 #### Junior Java Developer (Nov 2020 - May 2021)
 
-ALPE Consulting
+- ALPE Consulting
 
 #### Junior Java Developer (Dec 2019 - May 2021)
 #### Intern Java Developer (Jul 2019 - Dec 2019)
