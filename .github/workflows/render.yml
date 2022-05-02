@@ -23,5 +23,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions bot'
           git config --global user.email 'kuzznya@users.noreply.github.com'
-          git commit -am "Publish rendered CV"
+          git add cv.pdf
+          git commit -m "Publish rendered CV"
           git push
