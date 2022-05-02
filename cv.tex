@@ -1,0 +1,233 @@
+%%%%%%%%%%%%%%%%%
+% This CV created using altacv.cls
+% (v1.6.4, 13 Nov 2021) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option instead of "ragged2e,withhyper" if you want a normal photo instead of cropped to a circle
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and packages.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+% \definecolor{SlateGrey}{HTML}{2E2E2E}
+% \definecolor{LightGrey}{HTML}{666666}
+% \definecolor{DarkPastelRed}{HTML}{450808}
+% \definecolor{PastelRed}{HTML}{8F0D0D}
+% \definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{black}
+\colorlet{heading}{black}
+\colorlet{headingrule}{black}
+\colorlet{subheading}{black}
+\colorlet{accent}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Ilya Kuznetsov}
+\tagline{Senior Java Developer}
+
+%% You can add multiple photos on the left or right
+% \photoR{2.8cm}{Globe_High}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{
+  \location{St. Petersburg, Russia}
+%   \mailaddress{Åddrésş, Street, 00000 Cóuntry}
+  \email{ikuz2002@gmail.com}
+%   \phone{+79117500058}
+  \linkedin{kuzznya}
+  \github{kuzznya}
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+  %%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Experience}
+
+\cvevent{}{Dell Technologies}{}{St. Petersburg, Russia}
+\cvevent{Senior Java Developer}{}{Mar 2022 -- Ongoing}{}
+\cvevent{Java Developer}{}{May 2021 -- Mar 2022}{}
+
+System security management project
+\begin{itemize}
+\item Responsible for microservice security management system that manages host patching, password rotation \& other security-related tasks.
+\item Participated in designing and implementing new event driven architecture using Kafka. Increased test coverage of multiple microservices.
+\end{itemize}
+Java 11, Sprint Boot, K8s, RabbitMQ, Kafka, PostgreSQL, ELK
+
+\divider
+
+\cvevent{Java \& microservices mentor}{ITMO University}{Sep 2021 -- Ongoing}{St. Petersburg, Russia}
+
+Practice teacher of the course on microservices and high-performance systems for 4th year students
+
+
+\divider
+
+\cvevent{Junior Java Developer}{Intellectual Technologies}{Nov 2020 -- May 2021}{St. Petersburg, Russia}
+
+Development of data collecting & analysis system for oil industry. Was responsible for fault-tolerant and efficient data collecting and processing from the data sensors in an oil well.\\
+Service-oriented architecture, Spring WebFlux (Project Reactor), InfluxDB
+
+\divider
+
+\cvevent{}{ALPE Consulting}{}{St. Petersburg, Russia}
+\cvevent{Junior Java Developer}{}{Dec 2019 -- May 2021}{}
+\cvevent{Intern Java Developer}{}{Jul 2019 -- Dec 2019}{}
+
+Developed an extension system for SAP using microservice architecture. The communication with SAP was set up with SOAP protocol. Created both backend and frontend part, used microfrontend approach.\\
+Java, Spring Boot, Spring Cloud, Hibernate, Vue.js
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Education}
+
+\cvevent{Bachelor's degree,\\ Software Engineering}{ITMO University}{Sept 2019 -- June 2023}{}
+
+\cvsection{Skills}
+
+\cvevent{Programming Languages}{}{}{}
+
+Proficient:
+\cvtag{Java}
+\cvtag{Kotlin}
+\cvtag{SQL}
+
+Other:
+\cvtag{JS}
+\cvtag{Python}
+\cvtag{Bash}
+
+\divider\smallskip
+
+\cvevent{Frameworks}{}{}{}
+
+\cvtag{Spring (Core, Boot, Cloud, Security, Data)}
+\cvtag{Quarkus}
+\cvtag{Vue.js}
+\cvtag{Hibernate}
+\cvtag{Liquibase}
+
+\divider\smallskip
+
+\cvevent{Technologies}{}{}{}
+
+\cvtag{PostgreSQL}
+\cvtag{Cassandra}
+\cvtag{MongoDB}
+\cvtag{Kafka}
+\cvtag{RabbitMQ}
+\cvtag{InfluxDB}
+\cvtag{Redis}
+
+\divider\smallskip
+
+\cvevent{Tools}{}{}{}
+
+\cvtag{Maven}
+\cvtag{Gradle}
+\cvtag{Docker}
+\cvtag{Kubernetes}
+\cvtag{Linux}
+\cvtag{Git}
+\cvtag{GitHub Actions}
+\cvtag{Jenkins}
+
+
+\cvsection{Languages}
+
+\begin{itemize}
+\item English - advanced
+\item Russian - native
+\item French - beginner
+\end{itemize}
+
+\cvsection{Projects}
+
+\cvevent{Timepicker}{Helps friends to vote for the best event date}{}{}
+
+\url{https://timepicker.kuzznya.space}\\
+\github{kuzznya/timepicker}
+
+\begin{itemize}
+\item Full development and deployment to K8s
+\item Kotlin, Quarkus, Kafka, Cassandra, Vue.js, WebSockets, Keycloak
+\end{itemize}
+
+\divider
+
+\cvevent{Querier}{Simple SQL query builder}{}{}
+\github{javaica/querier}
+
+Simple yet useful SQL query builder that simplifies query creation by providing DSL.
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
+
+\end{paracol}
+
+\end{document}
