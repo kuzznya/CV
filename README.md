@@ -1,6 +1,6 @@
-# Ilya Kuznetsov
+# Ilia Kuznetsov
 
-### Senior Java Developer
+### Software Development Engineer
 
 Email: ikuz2002@gmail.com  
 LinkedIn: [kuzznya](https://linkedin.com/in/kuzznya)  
@@ -10,15 +10,14 @@ Telegram [kuzznya](https://t.me/kuzznya)
 
 ## Experience
 
+- Amazon Web Services, ElastiCache
+
+Software Development Engineer (Nov 2022 - ongoing)
+
 - Dell Technologies
 
-#### Senior Java Developer (Mar 2022 - ongoing)
+#### Senior Java Developer (Mar 2022 - Jul 2022)
 #### Java Developer (May 2021 - Mar 2022)
-
-
-- ITMO University
-
-#### Java & microservices mentor (Sep 2021 - ongoing)
 
 - Intellectual Technologies
 
@@ -39,15 +38,19 @@ Bachelor's degree, Software Engineering
 ## Skills
 
 Languages:
-Proficient: Java, Kotlin, SQL  
-Other: JS, Bash, Python
+Proficient: Java, Kotlin, Go, SQL  
+Other: JS, Python, Ruby, Bash
 
 Frameworks:
-Spring (Core, Boot, Cloud, Security, Data), Quarkus, Vue.js, Hibernate, Liquibase
+Spring (Core, Boot, Cloud, Security, Data),
+Quarkus, 
+Hibernate,
+jOOQ,
+Vue.js
 
 Technologies:
-PostgreSQL, Cassandra, MongoDB, 
-Kafka, RabbitMQ, InfluxDB, Redis
+PostgreSQL, Cassandra, MongoDB, Redis
+Kafka, RabbitMQ, InfluxDB, DynamoDB
 
 ## Languages
 

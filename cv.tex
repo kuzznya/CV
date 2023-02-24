@@ -65,15 +65,15 @@
 \renewcommand{\ratingmarker}{\faCircle}
 
 \begin{document}
-\name{Ilya Kuznetsov}
-\tagline{Senior Java Developer}
+\name{Ilia Kuznetsov}
+\tagline{Software Development Engineer}
 
 %% You can add multiple photos on the left or right
 % \photoR{2.8cm}{Globe_High}
 % \photoL{2.5cm}{Yacht_High,Suitcase_High}
 
 \personalinfo{
-  \location{St. Petersburg, Russia}
+  \location{Dublin, Ireland}
 %   \mailaddress{Åddrésş, Street, 00000 Cóuntry}
   \email{ikuz2002@gmail.com}
 %   \phone{+79117500058}
@@ -105,9 +105,15 @@
 \begin{paracol}{2}
 \cvsection{Experience}
 
-\cvevent{}{Dell Technologies}{}{St. Petersburg, Russia}
-\cvevent{Senior Java Developer}{}{Mar 2022 -- Ongoing}{}
-\cvevent{Java Developer}{}{May 2021 -- Mar 2022}{}
+\cvevent{Software Development Engineer}{Amazon Web Services}{Nov 2022 -- Ongoing}{Dublin, Ireland}
+
+AWS ElastiCache
+
+\divider
+
+%\cvevent{}{Dell Technologies}{}{St. Petersburg, Russia}
+\cvevent{Senior Java Developer}{}{Mar 2022 -- Jul 2022}{}
+\cvevent{Java Developer}{Dell Technologies}{May 2021 -- Mar 2022}{St. Petersburg, Russia}
 
 System security management project
 \begin{itemize}
@@ -118,13 +124,6 @@ Java 11, Sprint Boot, K8s, RabbitMQ, Kafka, PostgreSQL, ELK
 
 \divider
 
-\cvevent{Java \& microservices mentor}{ITMO University}{Sep 2021 -- Ongoing}{St. Petersburg, Russia}
-
-Practice teacher of the course on microservices and high-performance systems for 4th year students
-
-
-\divider
-
 \cvevent{Junior Java Developer}{Intellectual Technologies}{Nov 2020 -- May 2021}{St. Petersburg, Russia}
 
 Development of data collecting \& analysis system for oil industry. Was responsible for fault-tolerant and efficient data collecting and processing from the data sensors in an oil well.\\
@@ -132,9 +131,8 @@ Service-oriented architecture, Spring WebFlux (Project Reactor), InfluxDB
 
 \divider
 
-\cvevent{}{ALPE Consulting}{}{St. Petersburg, Russia}
 \cvevent{Junior Java Developer}{}{Dec 2019 -- May 2021}{}
-\cvevent{Intern Java Developer}{}{Jul 2019 -- Dec 2019}{}
+\cvevent{Intern Java Developer}{ALPE Consulting}{Jul 2019 -- Dec 2019}{St. Petersburg, Russia}
 
 Developed an extension system for SAP using microservice architecture. The communication with SAP was set up with SOAP protocol. Created both backend and frontend part, used microfrontend approach.\\
 Java, Spring Boot, Spring Cloud, Hibernate, Vue.js
@@ -145,7 +143,7 @@ Java, Spring Boot, Spring Cloud, Hibernate, Vue.js
 
 \cvsection{Education}
 
-\cvevent{Bachelor's degree,\\ Software Engineering}{ITMO University}{Sept 2019 -- June 2023}{}
+\cvevent{\normalsize{Bachelor's degree,\\ Software Engineering}}{ITMO University}{Sept 2019 -- June 2023}{}
 
 \cvsection{Skills}
 
@@ -154,39 +152,43 @@ Java, Spring Boot, Spring Cloud, Hibernate, Vue.js
 Proficient:
 \cvtag{Java}
 \cvtag{Kotlin}
+\cvtag{Go}
 \cvtag{SQL}
 
 Other:
 \cvtag{JS}
 \cvtag{Python}
+\cvtag{Ruby}
 \cvtag{Bash}
 
-\divider\smallskip
+\divider
 
 \cvevent{Frameworks}{}{}{}
 
 \cvtag{Spring (Core, Boot, Cloud, Security, Data)}
 \cvtag{Quarkus}
-\cvtag{Vue.js}
 \cvtag{Hibernate}
-\cvtag{Liquibase}
+\cvtag{jOOQ}
+\cvtag{Vue.js}
 
-\divider\smallskip
+\divider
 
 \cvevent{Technologies}{}{}{}
 
 \cvtag{PostgreSQL}
 \cvtag{Cassandra}
 \cvtag{MongoDB}
+\cvtag{Redis}
 \cvtag{Kafka}
 \cvtag{RabbitMQ}
 \cvtag{InfluxDB}
-\cvtag{Redis}
 
-\divider\smallskip
+\divider
 
 \cvevent{Tools}{}{}{}
 
+\cvtag{AWS}
+\cvtag{Terraform}
 \cvtag{Maven}
 \cvtag{Gradle}
 \cvtag{Docker}
@@ -209,20 +211,17 @@ Other:
 
 \cvevent{Timepicker}{Helps friends to vote for the best event date}{}{}
 
-\url{https://timepicker.kuzznya.space}\\
+\url{https://timepicker.kuzznya.com}\\
 \github{kuzznya/timepicker}
 
-\begin{itemize}
-\item Full development and deployment to K8s
-\item Kotlin, Quarkus, Kafka, Cassandra, Vue.js, WebSockets, Keycloak
-\end{itemize}
+Full development and deployment to K8s (Kotlin, Quarkus, Kafka, Cassandra, Keycloak)
 
 \divider
 
-\cvevent{Querier}{Simple SQL query builder}{}{}
-\github{javaica/querier}
+\cvevent{Letsdeploy}{Deploy apps \& services to K8s through UI}{}{}
+\github{kuzznya/letsdeploy}
 
-Simple yet useful SQL query builder that simplifies query creation by providing DSL.
+Project provides an easy way to deploy apps and services (PostgreSQL, Redis, etc.) to Kubernetes using web UI (Go, Vue.js)
 
 %% Yeah I didn't spend too much time making all the
 %% spacing consistent... sorry. Use \smallskip, \medskip,
