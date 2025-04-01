@@ -17,7 +17,7 @@
 %% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
 
 % Change the page layout if you need to
-\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=0.8cm}
 
 % The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
@@ -98,7 +98,7 @@
 % \AtBeginEnvironment{itemize}{\small}
 
 %% Set the left/right column width ratio to 6:4.
-\columnratio{0.6}
+\columnratio{0.64}
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
@@ -107,7 +107,14 @@
 
 \cvevent{Software Development Engineer}{Amazon Web Services}{Nov 2022 -- Ongoing}{Dublin, Ireland}
 
-AWS ElastiCache
+AWS ElastiCache – managed Redis, Valkey and Memcached service
+
+\begin{itemize}
+  \item Implemented SQL migration validation framework with a DDL statement parser that allowed full CD automation of database migration.
+  \item Improved vertical scaling and engine upgrade framework, ensuring zero downtime and 99.99\% availability.
+  \item Designed and delivered data lake based analysis and reporting for End-of-Life campaigns that allowed customers to see affected resources.
+  \item Implemented service update support for ElastiCache Serverless that updates customers' clusters automatically and transparently to the customer. 
+\end{itemize}
 
 \divider
 
@@ -115,19 +122,24 @@ AWS ElastiCache
 \cvevent{Senior Java Developer}{}{Mar 2022 -- Jul 2022}{}
 \cvevent{Java Developer}{Dell Technologies}{May 2021 -- Mar 2022}{St. Petersburg, Russia}
 
-System security management project
+System security management project that manages host patching, credential rotation \& other security-related tasks.
 \begin{itemize}
-\item Responsible for microservice security management system that manages host patching, password rotation \& other security-related tasks.
-\item Participated in designing and implementing new event driven architecture using Kafka. Increased test coverage of multiple microservices.
+  \item Designed and implemented new event driven architecture using Kafka, significantly improving reliability of the system.
+  \item Improved observability of the system by introducing tracing and structured logging.
 \end{itemize}
-Java 11, Sprint Boot, K8s, RabbitMQ, Kafka, PostgreSQL, ELK
+
+Java, Sprint Boot, K8s, RabbitMQ, Kafka, PostgreSQL, ELK
 
 \divider
 
 \cvevent{Junior Java Developer}{Intellectual Technologies}{Nov 2020 -- May 2021}{St. Petersburg, Russia}
 
-Development of data collecting \& analysis system for oil industry. Was responsible for fault-tolerant and efficient data collecting and processing from the data sensors in an oil well.\\
-Service-oriented architecture, Spring WebFlux (Project Reactor), InfluxDB
+Data collecting \& analysis system for oil industry.
+\begin{itemize}
+  \item Designed and implemented fault-tolerant and efficient data collecting and processing from the data sensors, handling over 20k values/sec.
+  \item Implemented stream and batch analysis that provided monitoring of the critical parts of the oil well.
+  \item Designed a long-term storage solution for collected data (over 1TB/day).
+\end{itemize}
 
 \divider
 
@@ -143,7 +155,7 @@ Java, Spring Boot, Spring Cloud, Hibernate, Vue.js
 
 \cvsection{Education}
 
-\cvevent{\normalsize{Bachelor's degree,\\ Software Engineering}}{ITMO University}{Sept 2019 -- June 2023}{}
+\cvevent{\normalsize{BSc, Software Engineering}}{ITMO University}{Sept 2019 -- June 2023}{}
 
 \cvsection{Skills}
 
@@ -156,12 +168,10 @@ Proficient:
 \cvtag{SQL}
 
 Other:
-\cvtag{JS}
+\cvtag{JS/TS}
 \cvtag{Python}
 \cvtag{Ruby}
 \cvtag{Bash}
-
-\divider
 
 \cvevent{Frameworks}{}{}{}
 
@@ -170,8 +180,6 @@ Other:
 \cvtag{Hibernate}
 \cvtag{jOOQ}
 \cvtag{Vue.js}
-
-\divider
 
 \cvevent{Technologies}{}{}{}
 
@@ -182,8 +190,9 @@ Other:
 \cvtag{Kafka}
 \cvtag{RabbitMQ}
 \cvtag{InfluxDB}
+\cvtag{DynamoDB}
 
-\divider
+\vspace{0.2cm}
 
 \cvevent{Tools}{}{}{}
 
@@ -209,12 +218,11 @@ Other:
 
 \cvsection{Projects}
 
-\cvevent{Timepicker}{Helps friends to vote for the best event date}{}{}
+\cvevent{Redis Search Replica (Go)}{}{}{}
 
-\url{https://timepicker.kuzznya.com}\\
-\github{kuzznya/timepicker}
+Redis full text search support implemented as a separate read replica (Go, C, k6)
 
-Full development and deployment to K8s (Kotlin, Quarkus, Kafka, Cassandra, Keycloak)
+\github{kuzznya/go-redis-search-replica}
 
 \divider
 
