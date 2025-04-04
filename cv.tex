@@ -98,56 +98,55 @@
 % \AtBeginEnvironment{itemize}{\small}
 
 %% Set the left/right column width ratio to 6:4.
-\columnratio{0.64}
+\columnratio{0.7}
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
 \cvsection{Experience}
 
-\cvevent{Software Development Engineer}{Amazon Web Services}{Nov 2022 -- Ongoing}{Dublin, Ireland}
+\cvevent{Software Development Engineer II (L5)}{Amazon Web Services}{Nov 2022 -- Ongoing}{Dublin, Ireland}
 
-AWS ElastiCache – managed Redis, Valkey and Memcached service
+\textit{AWS ElastiCache – managed Redis, Valkey and Memcached service}
 
 \begin{itemize}
-  \item Implemented SQL migration validation framework with a DDL statement parser that allowed full CD automation of database migration.
-  \item Improved vertical scaling and engine upgrade framework, ensuring zero downtime and 99.99\% availability.
-  \item Designed and delivered data lake based analysis and reporting for End-of-Life campaigns that allowed customers to see affected resources.
-  \item Implemented service update support for ElastiCache Serverless that updates customers' clusters automatically and transparently to the customer. 
+  \item Implemented service update support for ElastiCache Serverless that updates customers' clusters automatically and handles over 15k nodes/day with no disruption for the customer traffic.
+  \item Improved vertical scaling and engine upgrade framework, ensuring zero downtime and 99.99\% availability by providing <1s write unavailability during failover.
+  \item Led and delivered the cross-team project of a Data Lake-based analysis and reporting for End-of-Life campaigns using PySpark that allowed customers to see affected resources.
+  \item Implemented a SQL migration validation framework with a DDL statement parser and provided full CD automation of database migration across 30+ AWS regions, reducing release time by more than 50\%.
 \end{itemize}
 
 \divider
 
 %\cvevent{}{Dell Technologies}{}{St. Petersburg, Russia}
-\cvevent{Senior Java Developer}{Dell Technologies}{Mar 2022 -- Jul 2022}{St. Petersburg, Russia}
-\cvevent{Java Developer}{}{May 2021 -- Mar 2022}{}
+\cvevent{Senior Software Development Engineer}{Dell Technologies}{Mar 2022 -- Jul 2022}{St. Petersburg, Russia}
+\cvevent{Software Development Engineer}{}{May 2021 -- Mar 2022}{}
 
-System security management project that manages host patching, credential rotation \& other security-related tasks.
+\textit{Self-service system security management project}
+
 \begin{itemize}
-  \item Designed and implemented new event driven architecture using Kafka, significantly improving reliability of the system.
-  \item Improved observability of the system by introducing tracing and structured logging.
+  \item Led the design and implementation of a new event driven architecture using Kafka, significantly improving reliability of the system.
+  \item Led the cross-team project to manage credentials and automated patching of all internal servers across multiple internal clouds over 30+ locations.
+  \item Provided self-service web UI and backend for customers to manage and patch their resources.
+  \item Improved observability of the system by introducing tracing and structured logging, halving the average incident resolution time.
 \end{itemize}
-
-Java, Sprint Boot, K8s, RabbitMQ, Kafka, PostgreSQL, ELK
 
 \divider
 
 \cvevent{Junior Java Developer}{Intellectual Technologies}{Nov 2020 -- May 2021}{St. Petersburg, Russia}
 
-Data collecting \& analysis system for oil industry.
+\textit{Data collection \& analysis system for oil industry}
+
 \begin{itemize}
-  \item Designed and implemented fault-tolerant and efficient data collecting and processing from the data sensors, handling over 20k values/sec.
+  \item Designed and implemented fault-tolerant and efficient data collection and processing from the data sensors, handling over 20k datapoints/sec.
   \item Implemented stream and batch analysis that provided monitoring of the critical parts of the oil well.
-  \item Designed a long-term storage solution for collected data (over 1TB/day).
+  \item Designed a long-term storage solution with intelligent dynamic sampling for collected data (more than 1TB/day).
 \end{itemize}
 
 \divider
 
 \cvevent{Junior Java Developer}{ALPE Consulting}{Dec 2019 -- May 2021}{St. Petersburg, Russia}
 \cvevent{Intern Java Developer}{}{Jul 2019 -- Dec 2019}{}
-
-Developed an extension system for SAP using microservice architecture. The communication with SAP was set up with SOAP protocol. Created both backend and frontend part, used microfrontend approach.\\
-Java, Spring Boot, Spring Cloud, Hibernate, Vue.js
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
